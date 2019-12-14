@@ -7,7 +7,7 @@ from jsonfield import JSONField
 from rest_framework.exceptions import ValidationError
 from rest_framework.serializers import ModelSerializer, JSONField as JSONSerializerField
 
-from .SerializableModelFilter import SerializableModelFilter
+from .serializable_model_filter import SerializableModelFilter
 
 logger = logging.getLogger(__name__)
 

@@ -1,2 +1,2 @@
-from .SerializableModel import SerializableModel
-from .SerializableModelFilter import SerializableModelFilter
+from .serializable_model import SerializableModel
+from .serializable_model_filter import SerializableModelFilter
