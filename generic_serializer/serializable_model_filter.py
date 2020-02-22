@@ -46,7 +46,9 @@ class SerializableModelFilter:
         return labels
 
     def remove_if_not_exists_in_data(self, labels: list):
-        if not len(labels):
+        if self.data == {}:  # if we are serializing data will not be set and we should therefore not exclude
+            return labels
+        if not len(labels):  # if it is already empty dont bother to check if it is in the data.
             return []
         existing_object_names = self.get_existing_object_names()
         labels = [label for label in labels if label in existing_object_names]

@@ -33,8 +33,8 @@ class SerializableModel:
             logger.debug(f"using default model name as starting name: {self.get_model_name()}")
             filter.current_object_name = self.get_model_name()
         Serializer = type(self)._build_serializer(filter)
-        data = Serializer(self).data
-        return data
+        serializer = Serializer(self)
+        return serializer.data
 
     @classmethod
     def deserialize(cls, data, filter: SerializableModelFilter):
