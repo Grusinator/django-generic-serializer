@@ -7,6 +7,7 @@ from jsonfield import JSONField
 from rest_framework.exceptions import ValidationError
 from rest_framework.serializers import ModelSerializer, JSONField as JSONSerializerField
 
+from generic_serializer.json_utils import JsonUtils
 from .serializable_model_filter import SerializableModelFilter
 
 logger = logging.getLogger(__name__)
@@ -34,7 +35,7 @@ class SerializableModel:
             filter.current_object_name = self.get_model_name()
         Serializer = type(self)._build_serializer(filter)
         serializer = Serializer(self)
-        return serializer.data
+        return JsonUtils.validate(serializer.data)
 
     @classmethod
     def deserialize(cls, data, filter: SerializableModelFilter):
@@ -67,7 +68,6 @@ class SerializableModel:
         custom_field_properties = cls._build_custom_field_properties(filter)
         properties.update(custom_field_properties)
         properties = cls._add_relations_to_properties(properties, filter)
-
         properties = cls._add_create_method_to_properties(properties)
         return properties
 
@@ -84,7 +84,7 @@ class SerializableModel:
         except Exception as e:
             logger.warning(f"could not create related serializer object with name: {relation_name}")
         else:
-            return Serializer(many=cls._is_related_object_many(relation_name))
+            return Serializer(many=cls._is_related_object_many(relation_name), required=False)
         finally:
             filter.step_out()
 

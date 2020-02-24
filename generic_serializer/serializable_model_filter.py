@@ -28,7 +28,7 @@ class SerializableModelFilter:
             return []
         labels = self.remove_parrent_object(labels)
         labels = self.remove_exclude_labels(labels)
-        labels = self.remove_if_not_exists_in_data(labels)
+        # labels = self.remove_if_not_exists_in_data(labels)
         return labels
 
     def is_max_depth_reached(self):

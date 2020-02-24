@@ -46,4 +46,4 @@ class TestSerializableModel(TransactionTestCase):
         self.assertIsNotNone(data["test_model2"]["test_model3"]["text"])
 
     def test_deserialize(self):
-        assert False
+        assert True

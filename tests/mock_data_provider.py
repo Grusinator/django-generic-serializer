@@ -29,7 +29,6 @@ class MockDataProvider:
     def build_base_data(cls):
         return {
             'provider_name': 'dsfsd4',
-            'api_type': ApiTypes.OAUTH_GRAPHQL.value,
             'api_endpoint': '56',
         }
 
@@ -74,7 +73,6 @@ class MockDataProvider:
     def build_strava_data_provider_json(cls):
         return {
             "provider_name": "strava",
-            "api_type": "OauthRest",
             "api_endpoint": "https://www.strava.com/api/",
             "oauth_config": {
                 "authorize_url": "https://www.strava.com/oauth/authorize",
@@ -87,6 +85,7 @@ class MockDataProvider:
             },
             "endpoints": [
                 {
+                    "api_type": "OauthRest",
                     "endpoint_name": "activity",
                     "endpoint_url": "v3/activities",
                     "data_fetches": [
@@ -96,6 +95,7 @@ class MockDataProvider:
                     ]
                 },
                 {
+                    "api_type": "OauthRest",
                     "endpoint_name": "zone",
                     "endpoint_url": "v3/athlete/zones",
                     "data_fetches": [
@@ -105,6 +105,7 @@ class MockDataProvider:
                     ]
                 },
                 {
+                    "api_type": "OauthRest",
                     "endpoint_name": "athlete",
                     "endpoint_url": "v3/athlete",
                     "data_fetches": [
@@ -117,26 +118,20 @@ class MockDataProvider:
         }
 
     @classmethod
-    def build_strava_data_provider_objects(cls):
-        dp = DataProvider.create(
-            MockDataProvider.build_strava_data_provider_json()
-        )
-        return dp
-
-    @classmethod
     def create_data_provider_with_endpoints(cls):
         data_provider = DataProvider.objects.create(
             provider_name="dsfsd4",
-            api_type=ApiTypes.OAUTH_GRAPHQL.value
         )
         endpoint = Endpoint.objects.create(
             data_provider=data_provider,
             endpoint_name="test1",
-            endpoint_url="testurl"
+            endpoint_url="testurl",
+            api_type=ApiTypes.OAUTH_REST.value
         )
         endpoint2 = Endpoint.objects.create(
             data_provider=data_provider,
             endpoint_name="test2",
-            endpoint_url="testurl"
+            endpoint_url="testurl",
+            api_type=ApiTypes.OAUTH_REST.value
         )
         return data_provider

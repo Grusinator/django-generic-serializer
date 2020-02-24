@@ -1,5 +1,3 @@
-import unittest
-
 import django
 from django.test import TransactionTestCase
 
@@ -26,7 +24,6 @@ class TestHttpConfigSerializer(TransactionTestCase):
             request_type="proteins"
         )
 
-    @unittest.skip("move to Serializer project, failing due to known issues")
     def test_http_dynamic_serializer_deserialize(self):
         data = self.build_http_expected_json()
         exp_obj = self.build_http_model_objects()

@@ -1,33 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ced0db46-9c16-42f0-89c6-50eaacd8ad78" name="Default Changelist" comment="added old tests and models from metadataapi">
-      <change afterPath="$PROJECT_DIR$/test_app/django_model_enum.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/json_utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/models/ApiTypes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/models/DataProvider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/models/Endpoint.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/models/HttpConfig.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/models/OauthConfig.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/models/RequestType.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/serializers/DataProviderSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/serializers/EndpointSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/serializers/HttpConfigSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/serializers/OauthConfigSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_app/serializers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/mock_data_provider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_dataProviderSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_httpConfigSerializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_serializableModel_build_serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_serializableModel_deserialize.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_serializableModel_serialize.py" afterDir="false" />
+    <list default="true" id="ced0db46-9c16-42f0-89c6-50eaacd8ad78" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/django-generic-serializer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/django-generic-serializer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generic_serializer/serializable_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/generic_serializer/serializable_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/generic_serializer/serializable_model_filter.py" beforeDir="false" afterPath="$PROJECT_DIR$/generic_serializer/serializable_model_filter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_app/models/test_models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_app/json_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/generic_serializer/json_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_app/serializers/DataProviderSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_app/serializers/DataProviderSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/mock_data_provider.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/mock_data_provider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_dataProviderSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_dataProviderSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_httpConfigSerializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_httpConfigSerializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_serializableModel_build_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_serializableModel_build_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_serializableModel_deserialize.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_serializableModel_deserialize.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_serializableModel_serialize.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_serializableModel_serialize.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/test_serializable_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_serializable_model.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,9 +55,13 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\willi\repo\django-generic-serializer\generic_serializer" />
+      <recent name="C:\Users\willi\repo\django-generic-serializer\test_app\models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\willi\repo\django-generic-serializer\test_app" />
       <recent name="C:\Users\willi\repo\django-generic-serializer\tests" />
@@ -79,13 +69,9 @@
       <recent name="C:\Users\willi\repo\django-generic-serializer" />
       <recent name="C:\Users\willi\repo\django-generic-serializer\dist" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\willi\repo\django-generic-serializer\test_app\models" />
-      <recent name="C:\Users\willi\repo\django-generic-serializer\generic_serializer" />
-    </key>
   </component>
-  <component name="RunManager" selected="Django tests.test">
-    <configuration name="Test: tests.test_serializable_model.TestSerializableModel.test_serialize" type="DjangoTestsConfigurationType" temporary="true">
+  <component name="RunManager" selected="Django tests.Test: tests.test_dataProviderSerializer.TestDataProviderSerializer">
+    <configuration name="Test: tests.test_dataProviderSerializer.TestDataProviderSerializer" type="DjangoTestsConfigurationType" temporary="true">
       <module name="django-generic-serializer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -98,14 +84,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="tests.test_serializable_model.TestSerializableModel.test_serialize" />
+      <option name="TARGET" value="tests.test_dataProviderSerializer.TestDataProviderSerializer" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test: tests.test_serializable_model.TestSerializableModel.test_serialize_baker" type="DjangoTestsConfigurationType" temporary="true">
+    <configuration name="Test: tests.test_dataProviderSerializer.TestDataProviderSerializer.test_serializing_provider_only" type="DjangoTestsConfigurationType" temporary="true">
       <module name="django-generic-serializer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,14 +104,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="tests.test_serializable_model.TestSerializableModel.test_serialize_baker" />
+      <option name="TARGET" value="tests.test_dataProviderSerializer.TestDataProviderSerializer.test_serializing_provider_only" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="false" />
       <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Test: tests.test_serializable_model.TestSerializableModel.test_serialize_related" type="DjangoTestsConfigurationType" temporary="true">
+    <configuration name="Test: tests.test_serializableModel_build_serializer.TestSerializableModel.test_build_serializer" type="DjangoTestsConfigurationType" temporary="true">
       <module name="django-generic-serializer" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -138,11 +124,51 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="TARGET" value="tests.test_serializable_model.TestSerializableModel.test_serialize_related" />
+      <option name="TARGET" value="tests.test_serializableModel_build_serializer.TestSerializableModel.test_build_serializer" />
       <option name="SETTINGS_FILE" value="" />
       <option name="CUSTOM_SETTINGS" value="false" />
       <option name="USE_OPTIONS" value="true" />
       <option name="OPTIONS" value="--noinput" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_endpoints" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="django-generic-serializer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_endpoints" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_oauth" type="DjangoTestsConfigurationType" temporary="true">
+      <module name="django-generic-serializer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="TARGET" value="tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_oauth" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
       <method v="2" />
     </configuration>
     <configuration name="test" type="DjangoTestsConfigurationType">
@@ -167,15 +193,19 @@
     </configuration>
     <list>
       <item itemvalue="Django tests.test" />
-      <item itemvalue="Django tests.Test: tests.test_serializable_model.TestSerializableModel.test_serialize" />
-      <item itemvalue="Django tests.Test: tests.test_serializable_model.TestSerializableModel.test_serialize_baker" />
-      <item itemvalue="Django tests.Test: tests.test_serializable_model.TestSerializableModel.test_serialize_related" />
+      <item itemvalue="Django tests.Test: tests.test_dataProviderSerializer.TestDataProviderSerializer.test_serializing_provider_only" />
+      <item itemvalue="Django tests.Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_endpoints" />
+      <item itemvalue="Django tests.Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_oauth" />
+      <item itemvalue="Django tests.Test: tests.test_serializableModel_build_serializer.TestSerializableModel.test_build_serializer" />
+      <item itemvalue="Django tests.Test: tests.test_dataProviderSerializer.TestDataProviderSerializer" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Django tests.Test: tests.test_serializable_model.TestSerializableModel.test_serialize_related" />
-        <item itemvalue="Django tests.Test: tests.test_serializable_model.TestSerializableModel.test_serialize_baker" />
-        <item itemvalue="Django tests.Test: tests.test_serializable_model.TestSerializableModel.test_serialize" />
+        <item itemvalue="Django tests.Test: tests.test_dataProviderSerializer.TestDataProviderSerializer" />
+        <item itemvalue="Django tests.Test: tests.test_serializableModel_build_serializer.TestSerializableModel.test_build_serializer" />
+        <item itemvalue="Django tests.Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_oauth" />
+        <item itemvalue="Django tests.Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_endpoints" />
+        <item itemvalue="Django tests.Test: tests.test_dataProviderSerializer.TestDataProviderSerializer.test_serializing_provider_only" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +242,17 @@
       <workItem from="1582394897200" duration="1289000" />
       <workItem from="1582399717106" duration="1791000" />
       <workItem from="1582401545544" duration="1788000" />
-      <workItem from="1582403349118" duration="259000" />
+      <workItem from="1582403349118" duration="511000" />
+      <workItem from="1582473366359" duration="1723000" />
+      <workItem from="1582475343325" duration="1787000" />
+      <workItem from="1582477278600" duration="1731000" />
+      <workItem from="1582480452745" duration="1448000" />
+      <workItem from="1582482262040" duration="1288000" />
+      <workItem from="1582529298634" duration="343000" />
+      <workItem from="1582530380065" duration="592000" />
+      <workItem from="1582537599939" duration="1483000" />
+      <workItem from="1582540032764" duration="597000" />
+      <workItem from="1582541877801" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit split out from main">
       <created>1575970832263</created>
@@ -242,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1582400926373</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added old tests and models from metadataapi, actually a lot of tests passes. but needs fixing.">
+      <created>1582403775640</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1582403775640</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added old tests and models from metadataapi, actually a lot of tests passes. but needs fixing.">
+      <created>1582403839404</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1582403839404</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,80 +309,82 @@
     <MESSAGE value="changed class names to avoid migrations failing" />
     <MESSAGE value="added django project and tests" />
     <MESSAGE value="added old tests and models from metadataapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="added old tests and models from metadataapi" />
+    <MESSAGE value="added old tests and models from metadataapi, actually a lot of tests passes. but needs fixing." />
+    <option name="LAST_COMMIT_MESSAGE" value="added old tests and models from metadataapi, actually a lot of tests passes. but needs fixing." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="244" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582401134656">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582477031702">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="244" y="83" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582401134656" />
-    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582395115827" />
-    <state x="408" y="127" width="925" height="798" key="#xdebugger.evaluate" timestamp="1582401983600">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="223" y="68" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1582477031702" />
+    <state x="362" y="242" width="1037" height="582" key="#xdebugger.evaluate" timestamp="1582476973838">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="408" y="127" width="925" height="798" key="#xdebugger.evaluate/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582401983600" />
-    <state x="460" y="99" key="CommitChangelistDialog2" timestamp="1582403774739">
+    <state x="362" y="242" width="1037" height="582" key="#xdebugger.evaluate/0.0.1536.824@0.0.1536.824" timestamp="1582476973838" />
+    <state x="460" y="99" key="CommitChangelistDialog2" timestamp="1582403838732">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
-    <state x="460" y="99" key="CommitChangelistDialog2/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403774739" />
+    <state x="460" y="99" key="CommitChangelistDialog2/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403838732" />
     <state x="-1060" y="259" key="FileChooserDialogImpl" timestamp="1582394706929">
       <screen x="-1680" y="0" width="1680" height="1010" />
     </state>
     <state x="-1060" y="259" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1680.1010@-1680.0.1680.1010" timestamp="1582394706929" />
     <state x="620" y="259" key="FileChooserDialogImpl/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1576408856518" />
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom" timestamp="1582403729009">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="260" key="GridCell.Tab.0.bottom" timestamp="1582477409698">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="272" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.1680.1010@-1680.0.1680.1010" timestamp="1582394795117" />
-    <state width="1637" height="271" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403729009" />
-    <state width="1493" height="261" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582396149923" />
-    <state width="1637" height="271" key="GridCell.Tab.0.center" timestamp="1582403729009">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1637" height="271" key="GridCell.Tab.0.bottom/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403861129" />
+    <state width="1493" height="260" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582477409698" />
+    <state width="1493" height="260" key="GridCell.Tab.0.center" timestamp="1582477409698">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="272" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.1680.1010@-1680.0.1680.1010" timestamp="1582394795117" />
-    <state width="1637" height="271" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403729009" />
-    <state width="1493" height="261" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582396149923" />
-    <state width="1637" height="271" key="GridCell.Tab.0.left" timestamp="1582403729009">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1637" height="271" key="GridCell.Tab.0.center/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403861129" />
+    <state width="1493" height="260" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582477409698" />
+    <state width="1493" height="260" key="GridCell.Tab.0.left" timestamp="1582477409698">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="272" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.1680.1010@-1680.0.1680.1010" timestamp="1582394795116" />
-    <state width="1637" height="271" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403729009" />
-    <state width="1493" height="261" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582396149919" />
-    <state width="1637" height="271" key="GridCell.Tab.0.right" timestamp="1582403729009">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1637" height="271" key="GridCell.Tab.0.left/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403861129" />
+    <state width="1493" height="260" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582477409698" />
+    <state width="1493" height="260" key="GridCell.Tab.0.right" timestamp="1582477409698">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="272" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.1680.1010@-1680.0.1680.1010" timestamp="1582394795117" />
-    <state width="1637" height="271" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403729009" />
-    <state width="1493" height="261" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582396149923" />
-    <state width="1637" height="335" key="GridCell.Tab.1.bottom" timestamp="1582402341639">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1637" height="271" key="GridCell.Tab.0.right/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403861129" />
+    <state width="1493" height="260" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582477409698" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom" timestamp="1582477414356">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="335" key="GridCell.Tab.1.bottom/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582402341639" />
-    <state width="1493" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582396152547" />
-    <state width="1637" height="335" key="GridCell.Tab.1.center" timestamp="1582402341639">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582477414356" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center" timestamp="1582477414356">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="335" key="GridCell.Tab.1.center/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582402341639" />
-    <state width="1493" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582396152547" />
-    <state width="1637" height="335" key="GridCell.Tab.1.left" timestamp="1582402341639">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1582477414356" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left" timestamp="1582477414352">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="335" key="GridCell.Tab.1.left/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582402341639" />
-    <state width="1493" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582396152547" />
-    <state width="1637" height="335" key="GridCell.Tab.1.right" timestamp="1582402341639">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1582477414352" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right" timestamp="1582477414356">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1637" height="335" key="GridCell.Tab.1.right/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582402341639" />
-    <state width="1493" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582396152547" />
-    <state x="427" y="184" key="SettingsEditor" timestamp="1582399946559">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state width="1493" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1582477414356" />
+    <state x="390" y="112" key="SettingsEditor" timestamp="1582476510564">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="-1253" y="184" key="SettingsEditor/-1680.0.1680.1010/0.0.1680.1010@-1680.0.1680.1010" timestamp="1582394714107" />
     <state x="427" y="184" key="SettingsEditor/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582399946559" />
-    <state x="390" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582395577464" />
+    <state x="390" y="112" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1582476510564" />
     <state x="432" y="237" key="Vcs.Push.Dialog.v2" timestamp="1582403783070">
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
@@ -337,10 +393,11 @@
       <screen x="0" y="0" width="1680" height="1010" />
     </state>
     <state x="536" y="330" key="com.intellij.ide.util.TipDialog/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1580496241131" />
-    <state x="471" y="202" width="737" height="606" key="find.popup" timestamp="1582403575227">
-      <screen x="0" y="0" width="1680" height="1010" />
+    <state x="431" y="55" width="674" height="722" key="find.popup" timestamp="1582483086221">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="471" y="202" width="737" height="606" key="find.popup/-1680.0.1680.1010/0.0.1680.1010@0.0.1680.1010" timestamp="1582403575227" />
+    <state x="431" y="55" width="674" height="722" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1582483086221" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -361,28 +418,69 @@
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/generic_serializer/serializable_model.py</url>
-          <line>35</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/tests/test_dataProviderSerializer.py</url>
+          <line>51</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_dataProviderSerializer.py</url>
+          <line>41</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_serializableModel_serialize.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_dataProviderSerializer.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_httpConfigSerializer.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_serializableModel_build_serializer.py</url>
+          <line>33</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_serializableModel_serialize.py</url>
+          <line>46</line>
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/generic_serializer/serializable_model.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="13" />
+          <line>84</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/generic_serializer/serializable_model.py</url>
-          <line>34</line>
-          <option name="timeStamp" value="14" />
+          <url>file://$PROJECT_DIR$/tests/test_serializableModel_build_serializer.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="29" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializableModel_serialize_TestSerializableModelSerialize_test_serializing_provider_only.coverage" NAME="Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_only Coverage Results" MODIFIED="1582474208518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$pytest_for_test_serializableModel_build_serializer_TestSerializableModel_test_build_serializer.coverage" NAME="pytest for test_serializableModel_build_serializer.TestSerializableModel.test_build_serializer Coverage Results" MODIFIED="1582476306855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializable_model_TestSerializableModel_test_serialize_baker.coverage" NAME="Test: tests.test_serializable_model.TestSerializableModel.test_serialize_baker Coverage Results" MODIFIED="1582400065035" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/django_generic_serializer$pytest_for_test_serializable_model_TestSerializableModel_test_serialize.coverage" NAME="pytest for test_serializable_model.TestSerializableModel.test_serialize Coverage Results" MODIFIED="1582395069430" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/django_generic_serializer$test.coverage" NAME="test Coverage Results" MODIFIED="1582403679156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializable_model_TestSerializableModel_test_serialize.coverage" NAME="Test: tests.test_serializable_model.TestSerializableModel.test_serialize Coverage Results" MODIFIED="1582399993172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_dataProviderSerializer_TestDataProviderSerializer_test_serializing_provider_only.coverage" NAME="Test: tests.test_dataProviderSerializer.TestDataProviderSerializer.test_serializing_provider_only Coverage Results" MODIFIED="1582474279674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializable_model_TestSerializableModel_test_serialize_related.coverage" NAME="Test: tests.test_serializable_model.TestSerializableModel.test_serialize_related Coverage Results" MODIFIED="1582402341623" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_dataProviderSerializer_TestDataProviderSerializer.coverage" NAME="Test: tests.test_dataProviderSerializer.TestDataProviderSerializer Coverage Results" MODIFIED="1582480958241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_dataProviderSerializer_TestDataProviderSerializer_test_deserializing_provider_and_endpoints.coverage" NAME="Test: tests.test_dataProviderSerializer.TestDataProviderSerializer.test_deserializing_provider_and_endpoints Coverage Results" MODIFIED="1582474147912" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Unittests_for_test_serializableModel_build_serializer_TestSerializableModel_test_build_serializer.coverage" NAME="Unittests for test_serializableModel_build_serializer.TestSerializableModel.test_build_serializer Coverage Results" MODIFIED="1582476435879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializableModel_serialize_TestSerializableModelSerialize_test_serializing_provider_and_endpoints.coverage" NAME="Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_endpoints Coverage Results" MODIFIED="1582475088261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializableModel_serialize_TestSerializableModelSerialize_test_serializing_provider_and_oauth.coverage" NAME="Test: tests.test_serializableModel_serialize.TestSerializableModelSerialize.test_serializing_provider_and_oauth Coverage Results" MODIFIED="1582475748723" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$test.coverage" NAME="test Coverage Results" MODIFIED="1582476063812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializable_model_TestSerializableModel_test_serialize.coverage" NAME="Test: tests.test_serializable_model.TestSerializableModel.test_serialize Coverage Results" MODIFIED="1582399993172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_dataProviderSerializer_TestDataProviderSerializer_test_serializing_provider_and_oauth.coverage" NAME="Test: tests.test_dataProviderSerializer.TestDataProviderSerializer.test_serializing_provider_and_oauth Coverage Results" MODIFIED="1582473773432" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_dataProviderSerializer_TestDataProviderSerializer_test_serializing_provider_and_endpoints.coverage" NAME="Test: tests.test_dataProviderSerializer.TestDataProviderSerializer.test_serializing_provider_and_endpoints Coverage Results" MODIFIED="1582473839464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/django_generic_serializer$Test__tests_test_serializableModel_build_serializer_TestSerializableModel_test_build_serializer.coverage" NAME="Test: tests.test_serializableModel_build_serializer.TestSerializableModel.test_build_serializer Coverage Results" MODIFIED="1582477408927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>

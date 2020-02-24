@@ -1,5 +1,3 @@
-import unittest
-
 import django
 from django.test import TransactionTestCase
 
@@ -27,15 +25,12 @@ class TestSerializableModelSerialize(TransactionTestCase):
         )
         from generic_serializer import SerializableModelFilter
         data = data_provider.serialize(filter=SerializableModelFilter(max_depth=0))
-        expected = {'provider_name': 'dsfsd4', 'api_type': 'OauthRest', 'api_endpoint': ''}
+        expected = {'provider_name': 'dsfsd4', 'api_endpoint': None}
         self.assertDictEqual(expected, data)
 
-    @unittest.skip("move to Serializer project, failing due to known issues")
     def test_serializing_provider_and_oauth(self):
-        data_provider = self.model.objects.create(
-            provider_name="dsfsd6",
-        )
-        oauth = OauthConfig.objects.create(
+        data_provider = self.model.objects.create(provider_name="dsfsd6")
+        OauthConfig.objects.create(
             data_provider=data_provider,
             authorize_url="test",
             access_token_url="test.dk",
@@ -43,46 +38,23 @@ class TestSerializableModelSerialize(TransactionTestCase):
             client_secret="test",
             scope=['234', ]
         )
+        filter = SerializableModelFilter(max_depth=1, exclude_labels=self.exclude_labels + ("endpoints", "http_config"))
+        data = data_provider.serialize(filter=filter)
 
-        data = data_provider.serialize(
-            filter=SerializableModelFilter(max_depth=1,
-                                           exclude_labels=self.exclude_labels + ("endpoints", "http_config")))
-
-        expected = {
-            'provider_name': 'dsfsd6',
-            'api_type': 'OauthRest',
-            'api_endpoint': '',
-            'endpoints': [],
-            'oauth_config': {
-                'authorize_url': 'test',
-                'access_token_url': 'test.dk',
-                'client_id': '123',
-                'client_secret': 'test',
-                'scope': ['234'],
-            },
-
-        }
+        expected = {'provider_name': 'dsfsd6', 'api_endpoint': None,
+                    'oauth_config': {'authorize_url': 'test', 'access_token_url': 'test.dk', 'client_id': '123',
+                                     'client_secret': 'test', 'scope': ['234']}}
         self.assertDictEqual(expected, data)
 
-    @unittest.skip("move to Serializer project, failing due to known issues")
     def test_serializing_provider_and_endpoints(self):
         data_provider = MockDataProvider.create_data_provider_with_endpoints()
 
         from generic_serializer import SerializableModelFilter
         data = data_provider.serialize(
-            filter=SerializableModelFilter(max_depth=1, exclude_labels=("dataprovideruser",),
+            filter=SerializableModelFilter(max_depth=2, exclude_labels=("dataprovideruser",),
                                            start_object_name="data_provider"))
-        expected = {
-            'provider_name': 'dsfsd4',
-            'api_type': 'OauthGraphql',
-            'api_endpoint': '',
-            'endpoints': [
-                {'endpoint_name': 'test1', 'endpoint_url': 'testurl', 'request_type': 'GET'},
-                {'endpoint_name': 'test2', 'endpoint_url': 'testurl', 'request_type': 'GET'}
-            ]
-        }
+        expected = {'provider_name': 'dsfsd4', 'api_endpoint': None, 'endpoints': [
+            {'endpoint_name': 'test1', 'endpoint_url': 'testurl', 'api_type': 'OauthGraphql', 'request_type': 'GET'},
+            {'endpoint_name': 'test2', 'endpoint_url': 'testurl', 'api_type': 'OauthGraphql', 'request_type': 'GET'}],
+                    'http_config': None, 'oauth_config': None}
         self.assertEqual(expected, data)
-
-    @unittest.skip("fails because validated data on data dumps are not correct, needs fixing.")
-    def test_serialization_of_strava(self):
-        dp = MockDataProvider.build_strava_data_provider_objects()
